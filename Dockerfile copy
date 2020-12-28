@@ -1,0 +1,7 @@
+FROM mysql-installed
+MAINTAINER Keyur Patel
+COPY mysql.script /
+RUN chmod +x /mysql.script /
+
+
+EXPOSE 3306
